@@ -502,55 +502,33 @@ color: #f3f3f3;
   animation: fadeInCard 1.4s forwards;
   opacity: 0;
 }
-.contact-form input, .contact-form textarea {
-  padding: 12px;
-  border-radius: 7px;
-  border: 1.5px solid #cce6f6;
-  font-size: 1em;
+#contact {
+  max-width: 600px;
+  margin: 48px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   font-family: 'Roboto', sans-serif;
-  transition: border 0.2s;
-  background: rgba(255,255,255,0.7);
-  box-shadow: 0 2px 8px 0 rgba(0,161,224,0.04);
-  resize: vertical;
+  color: #333;
 }
-.contact-form input:focus, .contact-form textarea:focus {
-  border: 1.5px solid var(--primary);
-  outline: none;
-}
-.contact-form button {
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  padding: 14px;
-  border-radius: 7px;
-  font-size: 1.1em;
+
+#contact h2 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px 0 rgba(0,161,224,0.08);
-}
-.contact-form button:hover { background: var(--accent); color: var(--secondary);}
-/* Floating Action Button */
-.fab {
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  background: var(--primary);
-  color: #fff;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  box-shadow: 0 4px 24px 0 rgba(0,161,224,0.18);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #0070d2; /* Salesforce blue */
+  margin-bottom: 24px;
   font-size: 2em;
-  cursor: pointer;
-  z-index: 200;
-  transition: background 0.2s, transform 0.2s;
-  animation: fadeInUp 1.2s;
 }
+
+.contact-details p {
+  font-size: 1.1em;
+  margin: 12px 0;
+}
+
+.contact-details strong {
+  color: #0070d2;
+}
+
 .fab:hover { background: var(--accent); color: var(--secondary); transform: scale(1.08);}
 .fab-tooltip {
   position: absolute;
@@ -677,8 +655,8 @@ border-left-color: var(--accent);
   <a href="#skills" title="Skills"><i data-feather="bar-chart-2"></i><span class="tooltip">Skills</span></a>
   <a href="#certifications" title="Certifications"><i data-feather="award"></i><span class="tooltip">Certifications</span></a>
   <a href="#projects" title="Projects"><i data-feather="layers"></i><span class="tooltip">Projects</span></a>
-  <a href="#blog" title="Blog"><i data-feather="book-open"></i><span class="tooltip">Experience</span></a>
-  <a href="#testimonials" title="Testimonials"><i data-feather="message-square"></i><span class="tooltip">Testimonials</span></a>
+  <a href="#blog" title="Blog"><i data-feather="briefcase"></i><span class="tooltip">Experience</span></a>
+  <a href="#testimonials" title="Qualification"><i data-feather="book-open"></i><span class="tooltip">Qualification</span></a>
   <a href="#contact" title="Contact"><i data-feather="mail"></i><span class="tooltip">Contact</span></a>
 </nav>
 </div>
@@ -743,8 +721,8 @@ Salesforce Certified Platform Developer I">
     </div>
     <div class="cert">
       <img src="https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000BEqgM&oid=00DF0000000gZsu&lastMod=1693557540000" alt="Salesforce Certified Data Cloud Consultant">
-      <h3>Platform Developer II</h3>
-      <p>Salesforce Certified Platform Developer II</p>
+      <h3>Data cloud Couslatant</h3>
+      <p>Salesforce Data cloud Couslatant</p>
     </div>
     <div class="cert">
       <img src="https://drm.file.force.com/servlet/servlet.ImageServer?id=0153k00000BEqgH&oid=00DF0000000gZsu&lastMod=1693557495000" alt="Administrator">
@@ -900,14 +878,14 @@ Mitigates risks from outdated protocols and unpatched devices
       </h3>
       <p><b>Accomplishments:</b></p>
 <ul>
-<li><b>Service Cloud Implementation:</b> Customized Service Cloud Console components and integrated third-party CTI tools (e.g., Talkdesk) to enhance customer support workflows, reducing case resolution time by [X%].</li>
+<li><b>Service Cloud Implementation:</b> Customized Service Cloud Console components and integrated third-party CTI tools (e.g., Intel.com) to enhance customer support workflows.</li>
 <li><b>Lightning Web Components:</b> Developed reusable LWCs with dynamic data tables, parent-child architectures, and API-driven validations to improve UI performance and user experience.</li>
 <li><b>Aura-LWC Integration:</b> Migrated legacy Aura components to modern LWC frameworks while maintaining backward compatibility, ensuring seamless user transitions.</li>
 <li><b>Messaging in App Webservices (MIAW):</b> Migrated to live chat buttons to MIAW, offering an asynchronous conversation experience where customers can stop and then resume the chat at any time without losing conversation history. Customers can also chat across browser tabs and devices without losing the conversational thread.</li>
-<li><b>Flow Automation:</b> Designed complex screen flows with conditional logic to automate lead routing and case escalation processes, reducing manual effort by [X%].</li>
+<li><b>Flow Automation:</b> Designed complex screen flows with conditional logic to automate lead routing and case escalation processes.</li>
 <li><b>Apex Triggers & Classes:</b> Built scalable triggers with bulkified patterns and handler frameworks to enforce business rules, improving data integrity for 50k+ monthly transactions.</li>
-<li><b>Custom CSS Styling:</b> Enhanced Lightning components with CSS overrides and SLDS theming to align with brand guidelines, increasing UI adoption rates by [X%].</li>
-<li><b>API Integrations:</b> Connected Salesforce with external systems (e.g., SAP, Oracle) via REST/SOAP APIs and middleware tools like MuleSoft for real-time data exchange.</li>
+<li><b>Custom CSS Styling:</b> Enhanced Lightning components with CSS overrides and SLDS theming to align with brand guidelines</li>
+<li><b>API Integrations:</b> Connected Salesforce with external systems (e.g. like IRC system and intel support pages) via REST/SOAP APIs and middleware tools like MuleSoft for real-time data exchange.</li>
 <li><b>Data Migration:</b> Executed large-scale data imports using Data Loader and ETL tools, achieving 99.9% accuracy during legacy-to-Salesforce migrations.</li>
 <li><b>Agile Collaboration:</b> Groomed user stories and conducted sprint demos in Jira/Scrum environments, delivering 15+ features per quarter.</li>
 </ul>
@@ -915,33 +893,34 @@ Mitigates risks from outdated protocols and unpatched devices
   </div>
 </section>
 <section id="testimonials">
-  <h2>Testimonials</h2>
+  <h2>Qualification</h2>
   <div class="testimonials">
     <div class="testimonial">
-      <p>"[Your Name] transformed our Salesforce org with seamless automation and custom solutions. Highly recommended!"</p>
-      <strong>- Jane Doe, Sales Manager</strong>
+      <p>"The M.Tech. Cloud Computing is a Work Integrated Learning Programme (WILP) spanning four semesters. BITS Pilani's Work Integrated Learning Programmes are approved by the University Grants Commission (UGC)."</p>
+      <strong>- BITs Pilani , MTech - Cloud computing -- current pursing - 2025</strong>
     </div>
     <div class="testimonial">
-      <p>"Professional, proactive, and highly skilled in Salesforce development. A pleasure to work with."</p>
-      <strong>- John Smith, CTO</strong>
+      <p>"B.Tech in Computer Science & Engineering (CSE) with Three-year undergraduate program that provides a strong foundation in computer science and engineering principles"</p>
+      <strong>- Shreyas institute of engineering and technology , -- BTech CSE 2018-2022 </strong>
     </div>
     <div class="testimonial">
-      <p>"Their integration expertise and attention to detail made a huge impact on our business processes."</p>
-      <strong>- Priya Patel, CRM Lead</strong>
+      <p>"Diploma in Computer Science & Engineering (CSE) with Three-year undergraduate program that provides a strong foundation in computer science and engineering principles"</p>
+      <strong>- TRR college , Diploma CSE , 2016-2018</strong>
     </div>
   </div>
 </section>
 <section id="contact">
   <h2>Contact Me</h2>
-  <form class="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <div class="contact-details">
+    <p><strong>Name:</strong> Rajoju Pramodh</p>
+    <p><strong>Phone:</strong> +91 903014522</p>
+    <p><strong>Email:</strong> pramodrajoju123@gmail.com</p>
+    <p><strong>Address:</strong> Plot No 71, information colony , hayathnagar telangana 501505</p>
+  </div>
 </section>
+
 <footer>
-  &copy; 2025 [Your Name] | Salesforce Developer Portfolio
+  &copy; 2025 RAJOJU PRAMODH | Salesforce Developer Portfolio
 </footer>
 </div>
 <!-- Floating Action Button -->
